@@ -28,7 +28,13 @@ body.collection {
 }
 
 .collection-album-container .caption p a {
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.collection-album-container .caption p:hover a:hover {
+  text-decoration: none;
+  color: rgb(233,50,117);
 }
 
 .collection-album-container .caption p a.album-name {
