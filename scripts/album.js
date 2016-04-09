@@ -83,7 +83,13 @@ var findParentByClassName = function(element, targetClass) {
   if (element) {
     var currentParent = element.parentElement;
     while (currentParent.className != targetClass) {
-      currentParent = currentParent.parentElement;
+			if (element.parentElement === null) {
+				alert("No parent found");
+			} else if (element.parentElement.nodeName == 'html') {
+				alert("No parent found with that class name");
+			} else {
+      	currentParent = currentParent.parentElement;
+			}
     }
     return currentParent;
   }
@@ -158,4 +164,4 @@ window.onload = function() {
       });
     }
   });
-}
+} 
