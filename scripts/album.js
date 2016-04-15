@@ -1,24 +1,32 @@
-var createSongRow = function(songNumber, songName, songLength) {
-  var template =
-    '<tr class="album-view-song-item">'
-  + ' <td class="song-item-number" data-song-number="' + songNumber + '">' + songNumber + '</td>'
-  + ' <td class="song-item-title">' + songName + '</td>'
-  + ' <td class="song-item-duration">' + songLength + '</td>'
-  + '</tr>'
-  ;
+var setSong = function(songNumber) {
+	currentlyPlayingSongNumber = parseInt(songNumber);
+	currentSongFromAlbum = currentAlbum.songs[songNumber - 1];
+};
 
-  var $row = $(template);
+var getSongNumberCell = function(number) {
+	return $('.song-item-number[data-song-number="' + number + '"]');
+};
+
+var createSongRow = function(songNumber, songName, songLength) {
+	var template =
+	  '<tr class="album-view-song-item">'
+	+ ' <td class="song-item-number" data-song-number="' + songNumber + '">' + songNumber + '</td>'
+	+ ' <td class="song-item-title">' + songName + '</td>'
+	+ ' <td class="song-item-duration">' + songLength + '</td>'
+	+ '</tr>'
+	;
+
+	var $row = $(template);
 	
 	var clickHandler = function() {
   	var songNumber = parseInt($(this).attr('data-song-number'));
 		if (currentlyPlayingSongNumber !== null) {
-			var currentlyPlayingCell = $('.song-item-number[data-song-number="' + currentlyPlayingSongNumber + '"]');
+			var currentlyPlayingCell = getSongNumberCell(currentlyPlayingSongNumber);
 			currentlyPlayingCell.html(currentlyPlayingSongNumber);
 		}
 		if (currentlyPlayingSongNumber !== songNumber) {
 			$(this).html(pauseButtonTemplate);
-			currentlyPlayingSongNumber = songNumber;
-			currentSongFromAlbum = currentAlbum.songs[songNumber - 1];
+			setSong(songNumber);
 			updatePlayerSongBar();
 		} else if (currentlyPlayingSongNumber === songNumber) {
 			$(this).html(playButtonTemplate);
@@ -51,23 +59,23 @@ var createSongRow = function(songNumber, songName, songLength) {
 
 var setCurrentAlbum = function(album) {
 	currentAlbum = album;
-  var $albumTitle = $('.album-view-title');
+	var $albumTitle = $('.album-view-title');
 	var $albumArtist = $('.album-view-artist');
 	var $albumReleaseInfo = $('.album-view-release-info');
 	var $albumImage = $('.album-cover-art');
 	var $albumSongList = $('.album-view-song-list');
 
-  $albumTitle.text(album.title);
+	$albumTitle.text(album.title);
 	$albumArtist.text(album.artist);
 	$albumReleaseInfo.text(album.year + ' ' + album.label);
 	$albumImage.attr('src', album.albumArtUrl);
 
-  $albumSongList.empty();
+	$albumSongList.empty();
 
-  for (var i = 0; i < album.songs.length; i++) {
-    var $newRow = createSongRow(i + 1, album.songs[i].title, album.songs[i].duration);
+	for (var i = 0; i < album.songs.length; i++) {
+	  	var $newRow = createSongRow(i + 1, album.songs[i].title, album.songs[i].duration);
 		$albumSongList.append($newRow);
-  }
+	}
 };
 
 var nextSong = function() {
@@ -91,8 +99,8 @@ var nextSong = function() {
 	$('.main-controls .play-pause').html(playerBarPauseButton);
 
 	var lastSongNumber = getLastSongNumber(currentSongIndex);
-	var $nextSongNumberCell = $('.song-item-number[data-song-number="' + currentlyPlayingSongNumber + '"]');
-	var $lastSongNumberCell = $('.song-item-number[data-song-number="' + lastSongNumber + '"]');
+	var $nextSongNumberCell = getSongNumberCell(currentlyPlayingSongNumber);
+	var $lastSongNumberCell = getSongNumberCell(lastSongNumber);
 
 	$nextSongNumberCell.html(pauseButtonTemplate);
 	$lastSongNumberCell.html(lastSongNumber);
@@ -119,8 +127,8 @@ var previousSong = function() {
 	$('.main-controls .play-pause').html(playerBarPauseButton);
 
 	var lastSongNumber = getLastSongNumber(currentSongIndex);
-	var $previousSongNumberCell = $('.song-item-number[data-song-number="' + currentlyPlayingSongNumber + '"]');
-	var $lastSongNumberCell = $('.song-item-number[data-song-number="' + lastSongNumber + '"]');
+	var $previousSongNumberCell = getSongNumberCell(currentlyPlayingSongNumber);
+	var $lastSongNumberCell = getSongNumberCell(lastSongNumber);
 
 	$previousSongNumberCell.html(pauseButtonTemplate);
 	$lastSongNumberCell.html(lastSongNumber);
@@ -149,7 +157,7 @@ var $previousButton = $('.main-controls .previous');
 var $nextButton = $('.main-controls .next');
 
 $(document).ready(function() {
-  setCurrentAlbum(albumAcidRap);
+	setCurrentAlbum(albumAcidRap);
 	$previousButton.click(previousSong);
-  $nextButton.click(nextSong);
+	$nextButton.click(nextSong);
 });
