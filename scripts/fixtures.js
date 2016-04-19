@@ -5,19 +5,19 @@ var albumAcidRap = {
 	year: '2013',
 	albumArtUrl: 'assets/images/album_covers/acid.jpg',
 	songs: [
-		{ title: 'Good Ass Intro (feat. BJ The Chicago Kid, Lili K & Kiara Lanier)', duration: '3:59' },
-		{ title: 'Pusha Man (feat. Nate Fox & Lili K)', duration: '7:24' },
-		{ title: 'Cocoa Butter Kisses (feat. Vic Mensa & Twista)', duration: '5:07' },
-		{ title: 'Juice', duration: '3:35'},
-		{ title: 'Lost (feat. Noname Gypsy)', duration: '3:05'},
-		{ title: 'Everybody\'s Something (feat. Saba & BJ The Chicago Kid)', duration: '4:37'},
-		{ title: 'Interlude (That\'s Love)', duration: '2:30'},
-		{ title: 'Favorite Song (feat. Childish Gambino)', duration: '3:05'},
-		{ title: 'NaNa (feat. Action Bronson)', duration: '3:21'},
-		{ title: 'Smoke Again (feat. Ab-Soul)', duration: '4:33'},
-		{ title: 'Acid Rain', duration: '3:36'},
-		{ title: 'Chain Smoker', duration: '3:31'},
-		{ title: 'Everything\'s Good (Good Ass Outro)', duration: '5:33'}
+		{ title: 'Good Ass Intro (feat. BJ The Chicago Kid, Lili K & Kiara Lanier)', duration: '3:59', audioUrl: '/assets/music/good_ass_intro' },
+		{ title: 'Pusha Man (feat. Nate Fox & Lili K)', duration: '7:24', audioUrl: '/assets/music/pusha_man' },
+		{ title: 'Cocoa Butter Kisses (feat. Vic Mensa & Twista)', duration: '5:07', audioUrl: '/assets/music/cocoa_butter_kisses' },
+		{ title: 'Juice', duration: '3:35', audioUrl: '/assets/music/juice' },
+		{ title: 'Lost (feat. Noname Gypsy)', duration: '3:05', audioUrl: '/assets/music/lost' },
+		{ title: 'Everybody\'s Something (feat. Saba & BJ The Chicago Kid)', duration: '4:37', audioUrl: '/assets/music/everybodys_something' },
+		{ title: 'Interlude (That\'s Love)', duration: '2:30', audioUrl: '/assets/music/interlude' },
+		{ title: 'Favorite Song (feat. Childish Gambino)', duration: '3:05', audioUrl: '/assets/music/favorite_song' },
+		{ title: 'NaNa (feat. Action Bronson)', duration: '3:21', audioUrl: '/assets/music/nana' },
+		{ title: 'Smoke Again (feat. Ab-Soul)', duration: '4:33', audioUrl: '/assets/music/smoke_again' },
+		{ title: 'Acid Rain', duration: '3:36', audioUrl: '/assets/music/acid_rain' },
+		{ title: 'Chain Smoker', duration: '3:31', audioUrl: '/assets/music/chain_smoker' },
+		{ title: 'Everything\'s Good (Good Ass Outro)', duration: '5:33', audioUrl: '/assets/music/everythings_good' }
 	]
 };
 
