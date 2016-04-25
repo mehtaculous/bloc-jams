@@ -9,14 +9,14 @@ var albumAcidRap = {
 		{ title: 'Pusha Man (feat. Nate Fox & Lili K)', duration: 444, audioUrl: '/assets/music/pusha_man' },
 		{ title: 'Cocoa Butter Kisses (feat. Vic Mensa & Twista)', duration: 307, audioUrl: '/assets/music/cocoa_butter_kisses' },
 		{ title: 'Juice', duration: 215, audioUrl: '/assets/music/juice' },
-		{ title: 'Lost (feat. Noname Gypsy)', duration: 185, audioUrl: '/assets/music/lost' },
+		{ title: 'Lost (feat. Noname Gypsy)', duration: 184, audioUrl: '/assets/music/lost' },
 		{ title: 'Everybody\'s Something (feat. Saba & BJ The Chicago Kid)', duration: 277, audioUrl: '/assets/music/everybodys_something' },
-		{ title: 'Interlude (That\'s Love)', duration: 150, audioUrl: '/assets/music/interlude' },
+		{ title: 'Interlude (That\'s Love)', duration: 149, audioUrl: '/assets/music/interlude' },
 		{ title: 'Favorite Song (feat. Childish Gambino)', duration: 185, audioUrl: '/assets/music/favorite_song' },
-		{ title: 'NaNa (feat. Action Bronson)', duration: 201, audioUrl: '/assets/music/nana' },
-		{ title: 'Smoke Again (feat. Ab-Soul)', duration: 277, audioUrl: '/assets/music/smoke_again' },
+		{ title: 'NaNa (feat. Action Bronson)', duration: 200, audioUrl: '/assets/music/nana' },
+		{ title: 'Smoke Again (feat. Ab-Soul)', duration: 272, audioUrl: '/assets/music/smoke_again' },
 		{ title: 'Acid Rain', duration: 216, audioUrl: '/assets/music/acid_rain' },
-		{ title: 'Chain Smoker', duration: 211, audioUrl: '/assets/music/chain_smoker' },
+		{ title: 'Chain Smoker', duration: 210, audioUrl: '/assets/music/chain_smoker' },
 		{ title: 'Everything\'s Good (Good Ass Outro)', duration: 333, audioUrl: '/assets/music/everythings_good' }
 	]
 };
