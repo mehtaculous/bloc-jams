@@ -294,7 +294,7 @@ var $nextButton = $('.main-controls .next');
 var $playPauseButton = $('.main-controls .play-pause');
 
 $(document).ready(function() {
-	setCurrentAlbum(albumAcidRap);
+	setCurrentAlbum(acidRap);
 	setupSeekBars();
 	$previousButton.click(previousSong);
 	$nextButton.click(nextSong);
