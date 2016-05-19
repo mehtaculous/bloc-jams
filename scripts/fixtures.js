@@ -65,8 +65,36 @@ var theDefinition = {
 		{ title: 'Simple And Sweet', duration: 171, audioUrl: '/assets/music/the_definition/simple_and_sweet' },
 		{ title: 'An Immigrant', duration: 181, audioUrl: '/assets/music/the_definition/an_immigrant' },
 		{ title: 'Ooh (Feat. Christianne Jenson)', duration: 219, audioUrl: '/assets/music/the_definition/ooh' },
-		{ title: 'Luxary (Feat. Audra Mae)', duration: 243, audioUrl: '/assets/music/the_definition/luxary' },
+		{ title: 'Luxary (Feat. Audra Mae)', duration: 243, audioUrl: '/assets/music/the_definition/luxary' }
 	]
 };
 
-var albumFixtures = [acidRap, controlSystem, theDefinition];
+var soFarGone = {
+	title: 'So Far Gone',
+	artist: 'Drake',
+	label: 'October\'s Very Own',
+	year: '2009',
+	albumArtUrl: 'assets/images/album_covers/so_far_gone.jpg',
+	songs: [
+		{ title: 'Lust For Life', duration: 176, audioUrl: '/assets/music/so_far_gone/lust_for_life' },
+		{ title: 'Houstatlantavegas', duration: 291, audioUrl: '/assets/music/so_far_gone/houstatlantavegas' },
+		{ title: 'Successful (Feat. Trey Songz and Lil Wayne)', duration: 374, audioUrl: '/assets/music/so_far_gone/successful' },
+		{ title: 'Let\'s Call It Off (Feat. Peter Bjorn & John)', duration: 234, audioUrl: '/assets/music/so_far_gone/lets_call_it_off' },
+		{ title: 'November 18th', duration: 187, audioUrl: '/assets/music/so_far_gone/november_18th' },
+		{ title: 'Ignant Shit (Feat. Lil Wayne)', duration: 303, audioUrl: '/assets/music/so_far_gone/ignant_shit' },
+		{ title: 'A Night Off (Feat. Lloyd)', duration: 193, audioUrl: '/assets/music/so_far_gone/a_night_off' },
+		{ title: 'Say What\'s Real', duration: 230, audioUrl: '/assets/music/so_far_gone/say_whats_real' },
+		{ title: 'Little Bit (Feat. Lykke Li)', duration: 230, audioUrl: '/assets/music/so_far_gone/little_bit' },
+		{ title: 'Best I Ever Had', duration: 258, audioUrl: '/assets/music/so_far_gone/best_i_ever_had' },
+		{ title: 'Unstoppable (Remix) (Feat. Santigold and Lil Wayne)', duration: 210, audioUrl: '/assets/music/so_far_gone/unstoppable' },
+		{ title: 'Uptown (Feat. Bun B and Lil Wayne)', duration: 382, audioUrl: '/assets/music/so_far_gone/uptown' },
+		{ title: 'Sooner Than Later', duration: 262, audioUrl: '/assets/music/so_far_gone/sooner_than_later' },
+		{ title: 'Bria\'s Interlude (Feat. Omarion)', duration: 139, audioUrl: '/assets/music/so_far_gone/brias_interlude' },
+		{ title: 'The Calm', duration: 243, audioUrl: '/assets/music/so_far_gone/the_calm' },
+		{ title: 'Outro', duration: 174, audioUrl: '/assets/music/so_far_gone/outro' },
+		{ title: 'Brand New', duration: 215, audioUrl: '/assets/music/so_far_gone/brand_new' },
+		{ title: 'Congratulations', duration: 333, audioUrl: '/assets/music/so_far_gone/congratulations' }
+	]
+};
+
+var albumFixtures = [acidRap, controlSystem, theDefinition, soFarGone];

@@ -6,7 +6,7 @@ var buildCollectionItemTemplate = function(album) {
 	+ '    <p>'
 	+ '      <a class="album-name" href="/album.html">' + album.title + '</a>'
 	+ '      <br/>'
-	+ '      <a href="/album.html">' + album.artist + '</a>'
+	+ '      <a href="#">' + album.artist + '</a>'
 	+ '      <br/>' + album.songs.length + ' songs<br/>'
 	+ '    </p>'
 	+ '  </div>'
