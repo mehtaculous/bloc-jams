@@ -4,7 +4,7 @@ var buildCollectionItemTemplate = function(album) {
 	+ '  <img src=' + album.albumArtUrl + '>'
 	+ '  <div class="collection-album-info caption">'
 	+ '    <p>'
-	+ '      <a class="album-name" href="bloc-jams/album.html">' + album.title + '</a>'
+	+ '      <a class="album-name" href="album.html">' + album.title + '</a>'
 	+ '      <br/>'
 	+ '      <a href="#">' + album.artist + '</a>'
 	+ '      <br/>' + album.songs.length + ' songs<br/>'
