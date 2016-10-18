@@ -293,10 +293,6 @@ var $previousButton = $('.main-controls .previous');
 var $nextButton = $('.main-controls .next');
 var $playPauseButton = $('.main-controls .play-pause');
 
-// create dynamic route in stateprovider that accepts /album/:albumTitle
-// have album links go to a url like /album/ice
-// in the controller grab the url and take the "ice" part and use that to find a fixture to generate the template with/js
-
 $(document).ready(function() {
 	setCurrentAlbum(acidRap);
 	setupSeekBars();

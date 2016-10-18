@@ -1,0 +1,1 @@
+## [Bloc Jams](http://mehtaculous.github.io/bloc-jams/index.html): a digital music player like Spotify that I used to learn frontend web development. I started off by building the backbone of the application layout with HTML, added styling and responsiveness using CSS, and implemented interactivity with JavaScript.
