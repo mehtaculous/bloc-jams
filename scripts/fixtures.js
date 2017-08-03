@@ -4,6 +4,7 @@ var acidRap = {
 	label: 'Independent',
 	year: '2013',
 	albumArtUrl: 'assets/images/album_covers/acid.jpg',
+	slug: 'acid-rap',
 	songs: [
 		{ title: 'Good Ass Intro (feat. BJ The Chicago Kid, Lili K & Kiara Lanier)', duration: 239, audioUrl: '/assets/music/acid_rap/good_ass_intro' },
 		{ title: 'Pusha Man (feat. Nate Fox & Lili K)', duration: 444, audioUrl: '/assets/music/acid_rap/pusha_man' },
@@ -27,6 +28,7 @@ var controlSystem = {
 	label: 'Top Dawg Entertainment',
 	year: '2012',
 	albumArtUrl: 'assets/images/album_covers/control.jpeg',
+	slug: 'control-system',
 	songs: [
 		{ title: 'Soulo Ho3 (feat. Jhené Aiko)', duration: 237, audioUrl: '/assets/music/control_system/soulo_ho3' },
 		{ title: 'Track Two', duration: 243, audioUrl: '/assets/music/control_system/track_two' },
@@ -54,6 +56,7 @@ var theDefinition = {
 	label: 'Visionary Music Group',
 	year: '2014',
 	albumArtUrl: 'assets/images/album_covers/definition.jpg',
+	slug: 'the-definition',
 	songs: [
 		{ title: 'Munny Right', duration: 253, audioUrl: '/assets/music/the_definition/munny_right' },
 		{ title: 'Carry Your Throne', duration: 203, audioUrl: '/assets/music/the_definition/carry_your_throne' },
@@ -75,6 +78,7 @@ var soFarGone = {
 	label: 'October\'s Very Own',
 	year: '2009',
 	albumArtUrl: 'assets/images/album_covers/so_far_gone.jpg',
+	slug: 'so-far-gone',
 	songs: [
 		{ title: 'Lust For Life', duration: 176, audioUrl: '/assets/music/so_far_gone/lust_for_life' },
 		{ title: 'Houstatlantavegas', duration: 291, audioUrl: '/assets/music/so_far_gone/houstatlantavegas' },
@@ -97,4 +101,4 @@ var soFarGone = {
 	]
 };
 
-var albumFixtures = [acidRap, controlSystem, theDefinition, soFarGone];
+var albumFixtures = {"acid-rap": acidRap, "control-system": controlSystem, "the-definition": theDefinition, "so-far-gone": soFarGone};

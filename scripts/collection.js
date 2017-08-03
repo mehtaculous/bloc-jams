@@ -4,7 +4,7 @@ var buildCollectionItemTemplate = function(album) {
 	+ '  <img src=' + album.albumArtUrl + '>'
 	+ '  <div class="collection-album-info caption">'
 	+ '    <p>'
-	+ '      <a class="album-name" href="album.html">' + album.title + '</a>'
+	+ '      <a class="album-name" href="album.html?' + album.slug + '">' + album.title + '</a>'
 	+ '      <br/>'
 	+ '      <a href="#">' + album.artist + '</a>'
 	+ '      <br/>' + album.songs.length + ' songs<br/>'
@@ -20,8 +20,13 @@ $(window).load(function() {
 	var $collectionContainer = $('.album-covers');
 	$collectionContainer.empty();
 
-	for (var i = 0; i < albumFixtures.length; i++) {
-		var $newThumbnail = buildCollectionItemTemplate(albumFixtures[i]);
+//	for (var i = 0; i < albumFixtures.length; i++) {
+//		var $newThumbnail = buildCollectionItemTemplate(albumFixtures[i]);
+//		$collectionContainer.append($newThumbnail);
+//	}
+	
+	Object.keys(albumFixtures).forEach(function(key) {
+		var $newThumbnail = buildCollectionItemTemplate(albumFixtures[key]);
 		$collectionContainer.append($newThumbnail);
-	}
+	});
 });
